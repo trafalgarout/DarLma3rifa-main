@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة | موقع الزواج العربي - دليل شامل للزواج الإسلامي</title>
+    <meta name="description" content="أجوبة شاملة على الأسئلة الأكثر شيوعًا حول الزواج الإسلامي والتعارف. دليلك الموثوق للبحث عن شريك الحياة بطريقة إسلامية وأخلاقية.">
+    <meta name="keywords" content="الزواج الإسلامي, التعارف, أسئلة شائعة, زواج, إسلام, علاقات, شريك الحياة">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">موقع الزواج العربي</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">البحث</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">الملفات الشخصية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4 text-center mb-5">الأسئلة الشائعة</h1>
+                
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ Categories -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-primary text-white" id="headingGeneral">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-white" type="button" data-bs-toggle="collapse" data-bs-target="#generalQuestions">
+                                    <i class="fas fa-question-circle me-2"></i>أسئلة عامة
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="generalQuestions" class="collapse show" data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                <div class="accordion" id="generalQuestionsAccordion">
+                                    <!-- General Questions Will Be Inserted Here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More Categories Will Be Added Here -->
+                </div>
+
+                <div class="text-center mt-4">
+                    <p class="text-muted">
+                        لم تجد إجابتك؟ <a href="contact.html" class="text-primary">تواصل معنا</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>استكشف</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" target="_blank" class="text-white">الرئيسية</a></li>
+                        <li><a href="#" target="_blank" class="text-white">البحث</a></li>
+                        <li><a href="#" target="_blank" class="text-white">الملفات الشخصية</a></li>
+                        <li><a href="about.html" target="_blank" class="text-white">من نحن</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>سياسات الموقع</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy.html" class="text-white">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html" class="text-white">الشروط والأحكام</a></li>
+                        <li><a href="faq.html" class="text-white">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>تحميل التطبيق</h5>
+                    <a href="#" target="_blank" class="d-block mb-2">
+                        <img src="app-store-badge.svg" alt="App Store" width="180" class="img-fluid">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="google-play-badge.svg" alt="Google Play" width="180" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const generalQuestionsAccordion = document.getElementById('generalQuestionsAccordion');
+            const faqs = [
+                {
+                    category: 'أسئلة عامة',
+                    questions: [
+                        {
+                            question: 'ما هو الهدف الرئيسي من موقع الزواج العربي؟',
+                            answer: 'الهدف الرئيسي هو تسهيل التعارف الإسلامي بين الشباب العربي بطريقة أخلاقية وموثوقة، مع الحفاظ على القيم الإسلامية والخصوصية.'
+                        },
+                        {
+                            question: 'كيف يختلف موقعكم عن مواقع التعارف التقليدية؟',
+                            answer: 'نركز على الزواج الإسلامي مع ضمان أقصى درجات الخصوصية والأمان. نقدم مقابلات مؤمنة وموجهة نحو الزواج بعيداً عن العلاقات العابرة.'
+                        },
+                        {
+                            question: 'هل الموقع مجاني؟',
+                            answer: 'نقدم خدمات أساسية مجانية مع إمكانية الترقية للحصول على مميزات إضافية. التفاصيل الكاملة متاحة في صفحة الاشتراكات.'
+                        },
+                        {
+                            question: 'كيف أحمي خصوصيتي عند استخدام الموقع؟',
+                            answer: 'نوفر أدوات متقدمة للتحكم في الخصوصية مثل التشفير، وإخفاء التفاصيل الشخصية، وخيارات التواصل الآمن.'
+                        },
+                        {
+                            question: 'هل يوجد دعم فني للموقع؟',
+                            answer: 'نعم، فريق الدعم الفني متاح على مدار الساعة للإجابة على استفساراتك عبر البريد الإلكتروني والدردشة المباشرة.'
+                        }
+                    ]
+                },
+                {
+                    category: 'التسجيل والملف الشخصي',
+                    questions: [
+                        {
+                            question: 'من يمكنه التسجيل في الموقع؟',
+                            answer: 'يمكن التسجيل للمسلمين الراغبين في الزواج ممن تزيد أعمارهم عن 18 عاماً، مع التأكيد على الجدية والالتزام بالقيم الإسلامية.'
+                        },
+                        {
+                            question: 'كيف أنشئ ملف شخصي جذاب؟',
+                            answer: 'قدم معلومات صادقة وواضحة، وركز على قيمك وأهدافك الشخصية والعائلية. استخدم صورة شخصية محترمة تعكس شخصيتك.'
+                        },
+                        {
+                            question: 'هل يمكنني تعديل ملفي الشخصي لاحقاً؟',
+                            answer: 'بالتأكيد، يمكنك تحديث معلوماتك الشخصية في أي وقت من خلال لوحة التحكم الخاصة بك.'
+                        }
+                    ]
+                },
+                {
+                    category: 'البحث والتوافق',
+                    questions: [
+                        {
+                            question: 'كيف يعمل نظام المطابقة لدينا؟',
+                            answer: 'نستخدم خوارزميات ذكية تعتمد على التوافق الديني والثقافي والشخصي لاقتراح أفضل المرشحين المحتملين للزواج.'
+                        },
+                        {
+                            question: 'هل يمكنني البحث بمعايير محددة؟',
+                            answer: 'نعم، يمكنك تخصيص البحث حسب العمر، المدينة، المستوى التعليمي، الحالة الاجتماعية، والتوجهات الدينية.'
+                        }
+                    ]
+                }
+            ];
+
+            faqs.forEach((category, categoryIndex) => {
+                category.questions.forEach((faq, index) => {
+                    const questionId = `question${categoryIndex}-${index}`;
+                    const accordionItem = document.createElement('div');
+                    accordionItem.className = 'accordion-item';
+                    accordionItem.innerHTML = `
+                        <h2 class="accordion-header" id="heading${questionId}">
+                            <button class="accordion-button ${index !== 0 ? 'collapsed' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#${questionId}">
+                                ${faq.question}
+                            </button>
+                        </h2>
+                        <div id="${questionId}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" data-bs-parent="#generalQuestionsAccordion">
+                            <div class="accordion-body">
+                                ${faq.answer}
+                            </div>
+                        </div>
+                    `;
+                    generalQuestionsAccordion.appendChild(accordionItem);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

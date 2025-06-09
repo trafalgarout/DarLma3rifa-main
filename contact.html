@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | موقع الزواج العربي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">موقع الزواج العربي</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">البحث</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">الملفات الشخصية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="display-4 text-center mb-5">اتصل بنا</h1>
+                
+                <div class="card shadow-sm">
+                    <div class="card-body p-5">
+                        <h3 class="card-title text-primary mb-4 text-center">
+                            <i class="fas fa-envelope-open-text me-2"></i>أرسل لنا رسالة
+                        </h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">الاسم الكامل</label>
+                                <input type="text" class="form-control" id="name" placeholder="ادخل اسمك الكامل" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="email" placeholder="ادخل بريدك الإلكتروني" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">الموضوع</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="">اختر موضوع الرسالة</option>
+                                    <option value="support">الدعم الفني</option>
+                                    <option value="privacy">الخصوصية</option>
+                                    <option value="account">مشكلة في الحساب</option>
+                                    <option value="other">أخرى</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">رسالتك</label>
+                                <textarea class="form-control" id="message" rows="6" placeholder="اكتب رسالتك هنا" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mt-3">
+                                <i class="fas fa-paper-plane me-2"></i>إرسال الرسالة
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>استكشف</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" target="_blank" class="text-white">الرئيسية</a></li>
+                        <li><a href="#" target="_blank" class="text-white">البحث</a></li>
+                        <li><a href="#" target="_blank" class="text-white">الملفات الشخصية</a></li>
+                        <li><a href="about.html" target="_blank" class="text-white">من نحن</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>سياسات الموقع</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy.html" class="text-white">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html" class="text-white">الشروط والأحكام</a></li>
+                        <li><a href="faq.html" target="_blank" class="text-white">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>المجتمع</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">مركز المساعدة</a></li>
+                        <li><a href="#" class="text-white">الدعم الفني</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>تحميل التطبيق</h5>
+                    <a href="#" target="_blank" class="d-block mb-2">
+                        <img src="app-store-badge.svg" alt="App Store" width="180" class="img-fluid">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="google-play-badge.svg" alt="Google Play" width="180" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>جميع الحقوق محفوظة 2024 زواج و تعارف</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

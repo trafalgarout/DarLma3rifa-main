@@ -1,0 +1,37 @@
+# Dependency directories
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Large media files (optional, adjust as needed)
+*.mp4
+*.avi
+*.mov
+
+# Backup files
+*.backup
+
+# Compiled files
+*.class
+*.dll
+*.exe
+
+# Miscellaneous
+.temp/
+.cache/

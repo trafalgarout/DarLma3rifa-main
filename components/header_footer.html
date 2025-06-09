@@ -1,0 +1,101 @@
+<!-- Reusable Header and Footer Component -->
+<!-- Header -->
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" style="background-color: #f8f9fa;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-heart me-2 text-danger"></i>
+                <span class="fw-bold text-dark">زواج و تعارف</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wallpapers.html">معرض الخلفيات</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            خدمات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">البحث عن شريك</a></li>
+                            <li><a class="dropdown-item" href="#">استشارات الزواج</a></li>
+                            <li><a class="dropdown-item" href="#">خدمات التوافق</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="#" class="btn btn-primary me-2">تسجيل الدخول</a>
+                    <a href="#" class="btn btn-outline-primary">إنشاء حساب</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>استكشف</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">الرئيسية</a></li>
+                    <li><a href="wallpapers.html" class="text-white">معرض الخلفيات</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>خدماتنا</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">البحث عن شريك</a></li>
+                    <li><a href="#" class="text-white">استشارات الزواج</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>تواصل معنا</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">اتصل بنا</a></li>
+                    <li><a href="#" class="text-white">الدعم الفني</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>تابعنا</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-light my-4">
+        <div class="text-center">
+            <p>&copy; 2024 زواج و تعارف. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Header and Footer Loading Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Highlight active navigation item
+        const currentLocation = location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
